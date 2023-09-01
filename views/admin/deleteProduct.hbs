@@ -1,0 +1,19 @@
+<div class="mt-4">
+    <h3>Delete product</h3>
+    <div class="mb-3">
+        <label for="name">Name: {{product.name}}</label>
+    </div>
+    <div class="mb-3">
+        <label for="description">Description: {{product.description}}</label>
+    </div>
+    <div class="mb-3">
+        <label for="videoid">Image path: {{product.imagePath}}</label>
+    </div>
+    <div class="mb-3">
+        <label for="videoid">Price: {{product.price}}</label>
+    </div>
+    <form method="post" action="/admin/delete/{{product._id}}">
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </form>
+    <a href="/admin">Back</a>
+</div>

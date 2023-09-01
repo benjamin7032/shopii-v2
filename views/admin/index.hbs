@@ -1,0 +1,33 @@
+<div class="mt-4">
+    <h3>Manage Product</h3>
+    <a href="/admin/add" class="btn btn-link">Add Product</a>
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Image</th>
+                <th scope="col">Price</th>
+                <th scope="col">Create Date</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+            <tr>
+                <th scope="row">{{sum @index 1}}</th>
+                <td>{{this.name}}</td>
+                <td>{{this.description}}</td>
+                <td><img width="130px" height="150px" src="{{this.imagePath}}" alt=""></td>
+                <td>{{this.price}}</td>
+                <td>{{this.createdAt}}</td>
+                <td>
+                    <a href="/admin/update/{{this._id}}" class="btn btn-link">Update</a>
+                    <a href="/admin/delete/{{this._id}}" class="btn btn-link">Delete</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
