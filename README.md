@@ -5,7 +5,6 @@
 #### There are two roles: user and admin.
 #### Users can create a new account, login, view product, add product to cart, view cart, and order.
 #### Admin can manage products (using CRUD operations): view product list, add product, update product, delete product.
-#### I create this project in 3 days, right after I learned node.js and express.js, so it looks quite stupid =(((
 ## Login page
 ![Login page](Screenshots/1.png)
 ## Register page
